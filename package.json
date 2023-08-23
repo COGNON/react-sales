@@ -1,5 +1,5 @@
 {
-  "name": "stardew-checklist",
+  "name": "react-sales",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@mantine/core": "^6.0.19",
+    "@mantine/hooks": "^6.0.19",
+    "@mdi/js": "^7.2.96",
+    "@mdi/react": "^1.6.1",
+    "@tanstack/react-table": "^8.9.3",
+    "@tanstack/react-virtual": "^3.0.0-beta.54",
     "@types/node": "20.5.3",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
@@ -17,6 +24,7 @@
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.66.1",
     "typescript": "5.1.6"
   }
 }

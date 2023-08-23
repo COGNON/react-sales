@@ -1,0 +1,81 @@
+$border: 1px solid #ffffff60;
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  position: relative;
+
+  thead {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 36px;
+    background-color: var(--bg-color);
+    z-index: 100;
+  }
+
+  th,
+  td {
+    border-left: $border;
+    border-bottom: $border;
+    padding: 5px;
+  }
+  th:is(:first-child) > div,
+  .select-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  th:is(:last-child),
+  td:is(:last-child) {
+    border-right: $border;
+  }
+
+  th {
+    text-align: left;
+    border-top: $border;
+    & > div {
+      display: flex;
+      align-items: center;
+      & > svg {
+        padding-left: 5px;
+      }
+    }
+  }
+  td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .expanded-row {
+    width: 100%;
+    border-left: $border;
+    border-bottom: $border;
+    border-right: $border;
+    padding: 0.5rem;
+  }
+}
+.table-container {
+  height: 700px;
+  width: fit-content;
+  overflow: auto;
+  border-bottom: $border;
+}
+.table-bottom {
+  padding: 0.5rem;
+}
+::-webkit-scrollbar {
+  $size: 10px;
+  width: $size;
+  height: $size;
+}
+::-webkit-scrollbar-track {
+  background-color: #3a3a3a;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8b8b8b;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
